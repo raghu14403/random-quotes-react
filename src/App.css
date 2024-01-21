@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  min-height: 100vh;
+  max-width: 1280px;
+  background-color: #111729;
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.Card {
+  width: 480px;
+  min-height: 150px;
+  background-color: #20293a;
+  background-image: url(../public/bg-image-random-quote.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 15px;
+}
+.Card h1 {
+  color: #97a3b6;
+  text-align: center;
+  padding: 32px;
+  padding-top: 10px;
+  font-size: 1.5rem;
+}
+.Card h1::before,
+.Card h1::after {
+  content: '"';
+}
+.Card h2 {
+  margin-top: 25px;
+  font-size: 1rem;
+}
+
+.Tags {
+  display: flex;
+  gap: 10px;
+}
+.Tags p {
+  padding: 5px 15px;
+  color: #6466e9;
+  border: 1px solid #6466e9;
+  border-radius: 20px;
+  font-size: 0.625rem;
+}
+
+.Buttons {
+  background: none;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #4a5567;
+  cursor: pointer;
+}
+.Right {
+  border-radius: 0px 10px 10px 0px;
+}
+.Left :hover path {
+  fill: #97a3b6;
+}
+.Right :hover path {
+  fill: #97a3b6;
+}
+.Click {
+  margin: 15px;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    max-width: 640px;
+  }
+}
