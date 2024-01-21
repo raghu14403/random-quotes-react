@@ -39,6 +39,7 @@ body {
   flex-direction: column;
   gap: 10px;
   border-radius: 15px;
+  margin-top:15px;
 }
 .Card h1 {
   color: #97a3b6;
